@@ -1,0 +1,28 @@
+.form-input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.form-input label {
+  font-weight: 800;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.input {
+  width: 100%;
+  border-radius: 8px;
+  padding: 9px 18px;
+  border: 1px solid #3F3F3F;
+  margin-bottom: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

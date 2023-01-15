@@ -1,10 +1,10 @@
-.form-input {
+.formInput {
   display: flex;
   flex-direction: column;
   row-gap: 4px;
 }
 
-.form-input label {
+.formInput label {
   font-weight: 800;
 }
 

@@ -1,8 +1,8 @@
-import "./UserItem.css";
+import classes from "./UserItem.module.css";
 
 const UserItem = ({ user }) => {
   return (
-    <div className="user">
+    <div className={classes.user}>
       <div>
         <p>{user.name} ({user.age} years old)</p>
       </div>

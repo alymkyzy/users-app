@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "../UI/button/Button";
 import Input from "../UI/input/Input";
-import "./UserForm.css";
+import classes from "./UserForm.module.css";
 
 const UserForm = ({ addUser }) => {
   const [name, setName] = useState("");
@@ -29,7 +29,7 @@ const UserForm = ({ addUser }) => {
   let disabled = name.trim().length > 0 && age.trim().length > 0 ? true : false;
 
   return (
-    <form className="form">
+    <form className={classes.form}>
       <Input
         onChange={nameChangeHandler}
         value={name}

@@ -1,11 +1,11 @@
 import React from "react";
-import "./Input.css";
+import classes from "./Input.module.css";
 
 const Input = (props) => {
   return(
-    <div className="form-input">
+    <div className={classes.formInput}>
       <label>{props.label}</label>
-      <input className="input" {...props} />
+      <input className={classes.input} {...props} />
     </div>
   )
 };

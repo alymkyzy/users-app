@@ -1,5 +1,5 @@
 import UserItem from "../userItem/UserItem";
-import "./UserList.css";
+import classes from "./UserList.module.css";
 
 const UserList = ({ users }) => {
 
@@ -8,7 +8,7 @@ const UserList = ({ users }) => {
   }
 
   return (
-    <div className="users">
+    <div className={classes.users}>
       {sorted(users).map((user) => (
         <UserItem user={user}/>
       ))}
